@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  spads:
+    image: cheaterman/spads
+    volumes:
+      - ./maps:/spads/.spring/maps
+      - ./hostingPresets.conf:/spads/etc/hostingPresets.conf
+      - ./spads.conf:/spads/etc/spads.conf
+      - ./users.conf:/spads/etc/users.conf
